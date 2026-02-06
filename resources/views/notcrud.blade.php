@@ -386,7 +386,12 @@
                         </div>
                         <div>
                             <label for="periodicite">Periodicite</label>
-                            <input id="periodicite" name="periodicite" type="text" placeholder="hebdomadaire, mensuel, journalier" value="{{ old('periodicite') }}">
+                            <select id="periodicite" name="periodicite">
+                                <option value="">Selectionner</option>
+                                <option value="hebdomadaire" @selected(old('periodicite') === 'hebdomadaire')>Hebdomadaire</option>
+                                <option value="mensuel" @selected(old('periodicite') === 'mensuel')>Mensuel</option>
+                                <option value="journalier" @selected(old('periodicite') === 'journalier')>Journalier</option>
+                            </select>
                         </div>
                     </div>
                 </div>
