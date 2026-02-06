@@ -133,11 +133,6 @@
             gap: 12px;
             margin-bottom: 12px;
         }
-
-        @media (max-width: 600px) {
-            .row { grid-template-columns: 1fr; }
-        }
-
         .actions {
             display: flex;
             gap: 10px;
@@ -248,7 +243,8 @@
 <body>
 <div class="container">
     <header>
-        <div class="title">NotCRUD - Bibliotheque MongoDB</div>
+        <div class="title">NotCRUD - Bibliotheque
+        </div>
         <div class="badge">Laravel + MongoDB</div>
     </header>
 
